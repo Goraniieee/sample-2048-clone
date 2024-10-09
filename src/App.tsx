@@ -1,9 +1,8 @@
 import './reset.css';
+import './output.css';
 
-import { useReducer } from 'react';
+import Game2048Page from './pages/Game2048Page';
 
 export const App = () => {
-  const [count, increment] = useReducer((c: number) => c + 1, 0);
-
-  return <button onClick={increment}>{count}</button>;
+  return <Game2048Page />;
 };
